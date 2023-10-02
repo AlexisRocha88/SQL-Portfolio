@@ -1,0 +1,20 @@
+CREATE TABLE shoe_store_inventory(id INTEGER PRIMARY KEY,name TEXT, quantity INTEGER, color TEXT, price INTEGER);
+
+INSERT INTO shoe_store_inventory VALUES(1, "Loafer", 15,"brown",19.99);
+INSERT INTO shoe_store_inventory VALUES(2, "Wedges", 5, "pink", 25.99);
+INSERT INTO shoe_store_inventory VALUES(3, "Sneakers",32,"white",15.99);
+INSERT INTO shoe_store_inventory VALUES(4, "High Heels", 20, "black", 25.99);
+INSERT INTO shoe_store_inventory VALUES(5, "Sandals", 12, "purple", 12.99);
+INSERT INTO shoe_store_inventory VALUES(6, "Slippers", 25, "brown", 10.99);
+INSERT INTO shoe_store_inventory VALUES(7, "Flip Flops", 30, "pink",8.99);
+INSERT INTO shoe_store_inventory VALUES(8, "Boots", 18, "black", 30.99);
+INSERT INTO shoe_store_inventory VALUES(9, "Platforms", 15,"black",30.99);
+INSERT INTO shoe_store_inventory VALUES(10, "Flats", 32, "brown", 22.99);
+INSERT INTO shoe_store_inventory VALUES(11, "Slides", 29,"black",8.99);
+INSERT INTO shoe_store_inventory VALUES(12, "Running Shoes", 23, "white", 22.99);
+INSERT INTO shoe_store_inventory VALUES(13, "Cross Trainers", 33, "pink", 22.99);
+INSERT INTO shoe_store_inventory VALUES(14, "Clogs", 45, "brown", 32.99);
+INSERT INTO shoe_store_inventory VALUES(15, "Water Shoes", 11, "blue",24.99);
+SELECT * FROM shoe_store_inventory ORDER BY price;
+SELECT SUM(quantity) FROM shoe_store_inventory;
+SELECT SUM(price*quantity) FROM shoe_store_inventory
