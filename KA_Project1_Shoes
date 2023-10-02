@@ -15,6 +15,9 @@ INSERT INTO shoe_store_inventory VALUES(12, "Running Shoes", 23, "white", 22.99)
 INSERT INTO shoe_store_inventory VALUES(13, "Cross Trainers", 33, "pink", 22.99);
 INSERT INTO shoe_store_inventory VALUES(14, "Clogs", 45, "brown", 32.99);
 INSERT INTO shoe_store_inventory VALUES(15, "Water Shoes", 11, "blue",24.99);
+
 SELECT * FROM shoe_store_inventory ORDER BY price;
+/* Used this to see what item in the inventory is the highest and lowest priced item */
+
 SELECT SUM(quantity) FROM shoe_store_inventory;
 SELECT SUM(price*quantity) FROM shoe_store_inventory
